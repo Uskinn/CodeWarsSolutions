@@ -18,3 +18,19 @@ function arrayPlusArray(arr1, arr2) {
   return sum1 + sum2;
 }
 ```
+
+* https://www.codewars.com/kata/pick-a-set-of-first-elements/train/javascript
+
+```javascript
+function first(arr, n = 1) {
+  let returnArr = [];
+  if (n > arr.length) {
+    return arr;
+  }
+  for (let i = 0; i < n; i++) {
+    returnArr.push(arr[i]);
+  }
+  return returnArr;
+}
+
+```
