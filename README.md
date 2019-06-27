@@ -31,6 +31,14 @@ function first(arr, n = 1) {
     returnArr.push(arr[i]);
   }
   return returnArr;
-}
+```
 
+* https://www.codewars.com/kata/57073869924f34185100036d
+
+```javascript
+function randomCase(x) {
+  return x.split('').map(function(element) {
+    return Math.random() > 0.5 ? element.toUpperCase() : element.toLowerCase();
+  }).join('');
+}
 ```
