@@ -53,3 +53,27 @@ function getRectangleString(width, height) {
   return height > 1 ? topBottom + center + topBottom : topBottom.repeat(height);
 }
 ```
+* https://www.codewars.com/kata/string-average/javascript
+
+```javascript
+
+function averageString(str) {
+  let numStr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+  let sum = 0;
+  let floor = 0;
+  let f;
+  let arrStr = str.split(' ');
+  for (let i = 0; i < arrStr.length; i++) {
+    f = false;
+    for (let q = 0; q < numStr.length; q++) {
+      if (arrStr[i] === numStr[q]) {
+        sum += q;
+        f = true;
+      }
+    }
+    if (!f) return 'n/a';
+  }
+  floor = Math.floor(sum / arrStr.length);
+  return numStr[floor];
+}
+```
