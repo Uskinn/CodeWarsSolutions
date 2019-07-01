@@ -77,3 +77,19 @@ function averageString(str) {
   return numStr[floor];
 }
 ```
+
+* https://www.codewars.com/kata/5264d2b162488dc400000001
+
+```javascript
+
+function spinWords(str) {
+  let arrStr = str.split(' ');
+
+  for (let i = 0; i < arrStr.length; i++) {
+    if (arrStr[i].length >= 5) {
+      arrStr[i] = arrStr[i].split('').reverse().join('');
+    }
+  }
+  return arrStr.join(' ');
+}
+```
