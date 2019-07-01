@@ -94,4 +94,3 @@ function spinWords(str) {
 }
 ```
 
-New commit
