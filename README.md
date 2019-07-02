@@ -158,3 +158,18 @@ function findOdd(A) {
   count = 0;
 }
 ```
+
+* https://www.codewars.com/kata/5390bac347d09b7da40006f6
+
+```javascript
+String.prototype.toJadenCase = function () {
+    let result = [];
+    let strWords = this.toLowerCase().split(' ');
+
+    for (let i = 0; i < strWords.length; i++) {
+        word = strWords[i];
+        result.push(word[0].toUpperCase() + word.slice(1));
+    }
+    return result.join(" ");
+};
+```
