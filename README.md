@@ -174,4 +174,4 @@ String.prototype.toJadenCase = function () {
 };
 ```
 
-Master commit
+
