@@ -93,5 +93,30 @@ function spinWords(str) {
   return arrStr.join(' ');
 }
 ```
+* https://www.codewars.com/kata/541c8630095125aba6000c00
 
+```javascript
+
+function digital_root(n) {
+  let num = 0;
+  let nStr = n.toString();
+  let digits = [];
+
+  if (n < 9) {
+    return num = n;
+  } else if (n > 9) {
+    for (let i = 0; i < nStr.length; i++) {
+      digits.push(nStr[i]);
+    }
+    for (let i = 0; i < digits.length; i++) {
+      num += Number(digits[i]);
+    }
+  }
+  if (num > 9) {
+    n = num;
+   return digital_root(n)
+   }
+  return num;
+}
+```
 
