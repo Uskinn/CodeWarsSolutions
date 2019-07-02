@@ -173,7 +173,3 @@ String.prototype.toJadenCase = function () {
     return result.join(" ");
 };
 ```
-
-Commit
-
-Commit #3
