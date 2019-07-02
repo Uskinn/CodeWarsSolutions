@@ -119,4 +119,11 @@ function digital_root(n) {
   return num;
 }
 ```
+* https://www.codewars.com/kata/56dec885c54a926dcd001095
+
+```javascript
+function opposite(number) {
+return number > 0 ? Number(`-${number}`) : number *= -1;
+}
+```
 
